@@ -1,0 +1,221 @@
+:root {     /* to taget global variables */
+    --text-color: black;
+    --link-color: #4a76ee;
+    --background-cokor: #f8f9fa;
+
+}
+
+* { /* to reset all the default styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth  ;   /* to make the scroll smooth */
+}
+
+body   {    
+    font-family: 'poppins', sans-serif;
+    background-color: var(--background-color);
+
+}
+
+a { /* to style the anchortags */
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+nav .right a {
+    color: var(--text-color);
+    font-size: 18px; 
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+nav .right a:last-child {   /* to style the last anchor tag */   
+    color: var(--background-cokor);
+    background-color:  var(--text-color); 
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+nav .right a:last-child:hover { /* to style the email to touvh and make it blue */
+    background-color:  var(--link-color);
+    color: var(--background-cokor);
+}
+
+/* Hero (section1) styling */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px; 
+    gap: 40px;
+}
+
+.hero-section .text h2 {
+    font-size: 40px;
+   
+}
+.hero-section .text .links  {
+    margin-top: 25px;              /* to give space between the text and the links */ 
+}
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: var(--link-color) 2px solid;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.hero-section .text {
+    flex: 5;
+}
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+/* About SKILL(SECTION 2) styling */
+
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between icons */
+    padding: 20px;
+}
+
+.skills-section .cell {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adds space between each image-text pair */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease;
+    padding: 20px;
+    background-color: white;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.5s ease
+}
+
+.skills-section .cell img {
+    width: 60px; /* Adjusts icon size */
+    height: auto;
+    transition: transform 1s ease;
+    
+}
+
+.skills-section .cell span {
+    display: block; /* Moves text below the icon */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px; /* Space between icon and text */
+}
+
+
+.skills-section .cell:hover {
+    transform: translateY(-25px);
+}
+
+
+@media (max-width: 850px) {/* to make the hero section responsive */
+
+    .hero-section .text {
+        font-size: 35px;
+    }
+
+}
+@media (max-width: 740px) {/* to make the hero section responsive */
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 600px) { /* to make the navbar responsive */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a{
+        font-size: 22px;
+        
+    }
+
+    nav .right a span{
+        display: none;
+
+    }
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color:  transparent;
+        padding: 0;
+    }
+     
+    .hero-section {
+         padding: 0 20px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+
+    .hero-section .text p {
+        font-size: 20px;
+    }
+
+}
