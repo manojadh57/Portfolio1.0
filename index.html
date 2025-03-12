@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://kit.fontawesome.com/92d073c05b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,16 +30,19 @@
     <main>
         <section class="hero-section">
             <div class="text">
-                <h2>Hey! 👋😊 I am Manoj Adhikari</h2>
+                <h2><span class="typing-container">Hey! 👋😊 I am Manoj Adhikari</span></h2>
                 <p> I love building beautiful, responsive, and user-friendly websites using HTML, CSS, and JavaScript.
                     My focus is on creating seamless user experiences with clean and efficient code.
                     I enjoy transforming ideas into reality through interactive and visually appealing designs.
                     Whether it's crafting engaging landing pages or developing full-fledged web applications,
                     I always strive to bring creativity and functionality together.</p>
                 <div class="links">
-                    <a href="#Skills" target="_blank"><i class="fa-solid fa-code"></i> Skills</a>
-                    <a href="#testimony" target="_blank"><i class="fa-solid fa-pen"></i> Testimony</a>
-                    <a href="#contact" target="_blank"><i class="fa-solid fa-envelope"></i> Contact</a>
+                    <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+                    <a href="#services"><i class="fa-solid fa-briefcase"></i> My Services</a>
+                    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+                    <BR>
+                    <BR>
+                    <a href="#"><i class="fa-solid fa-file"></i> DOWNLOAD RESUME</a>
                 </div>
             </div>
             <div class="headshot">
@@ -66,17 +69,77 @@
                     <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"><span>Git</span>
                     <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"><span>GitHub</span>
 
-
-
                 </div>
 
 
             </div>
-
-
         </section>
-        <section id="testimony"> </section>
-        <section id="contact"> </section>
+        <section id="services" class="service-section">
+            <div class="container">
+                <h1 class="sub-title"> MY SERVICES </h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>WEB DESIGN</h2>
+                        <p> Web design is the process of creating visually appealing and user-friendly websites. It
+                            involves designing the layout, colors, typography, images, and interactive elements to
+                            ensure a great user experience (UX) and user interface (UI).</p>
+                        <a href="#"> learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX DESIGN</h2>
+                        <p> Web design is the process of creating visually appealing and user-friendly websites. It
+                            involves designing the layout, colors, typography, images, and interactive elements to
+                            ensure a great user experience (UX) and user interface (UI).</p>
+                        <a href="#"> learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>APP DESIGN</h2>
+                        <p> Web design is the process of creating visually appealing and user-friendly websites. It
+                            involves designing the layout, colors, typography, images, and interactive elements to
+                            ensure a great user experience (UX) and user interface (UI).</p>
+                        <a href="#"> learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container-2">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="row">
+                    <!-- Left Side: Contact Info -->
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-envelope"></i> manojadhikari57@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 0424442055</p>
+
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Contact Form -->
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="thank-you">Thank You for Visiting! 😊</p>
+        </footer>
+
+
     </main>
 
 </body>
